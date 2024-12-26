@@ -4,15 +4,15 @@ public class Main {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        task1(scanner);
-        task2(scanner);
-        task3(scanner);
-        task4(scanner);
-        task5(scanner);
-        homework1(scanner);
-        homework2(scanner);
-        homework3(scanner);
-        fibonachi1(scanner);
+        //task1(scanner);
+        //task2(scanner);
+        //task3(scanner);
+        //task4(scanner);
+        //task5(scanner);
+        //homework1(scanner);
+        //homework2(scanner);
+        //homework3(scanner);
+        //fibonachi1(scanner);
 
         System.out.println("Введите число для расчета числа Фибоначчи (рекурсия):");
         int x = scanner.nextInt();
@@ -132,9 +132,7 @@ public class Main {
     }
 
     public static int fibonachi2(int number) {
-        if(number == 0){
-            return 0;
-        } else if (number == 1){
+        if (number <= 1){
             return 0;
         } else if (number == 2){
             return 1;
