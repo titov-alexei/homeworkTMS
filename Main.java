@@ -4,20 +4,20 @@ public class Main {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        //task1(scanner);
-        //task2(scanner);
-        //task3(scanner);
-        //task4(scanner);
-        //task5(scanner);
-        //homework1(scanner);
-        //homework2(scanner);
-        //homework3(scanner);
-        //fibonachi1(scanner);
+        task1(scanner);
+        task2(scanner);
+        task3(scanner);
+        task4(scanner);
+        task5(scanner);
+        homework1(scanner);
+        homework2(scanner);
+        homework3(scanner);
+        fibonachi1(scanner);
 
-        System.out.println("Введите число для расчета числа Фибоначчи");
+        System.out.println("Введите число для расчета числа Фибоначчи (рекурсия):");
         int x = scanner.nextInt();
         int res = fibonachi2(x);
-        System.out.println("Фибоначи рекурсия: " + res);
+        System.out.println("Число Фибоначи: " + res);
     }
 
     public static void task1(Scanner scan){
@@ -72,14 +72,14 @@ public class Main {
     }
 
     public static void homework1(Scanner scan){
-        System.out.println("Задача №6\n Введите ширину и длину прямоугольника через Enter");
+        System.out.println("ДЗ №1\n Введите ширину и длину прямоугольника через Enter");
         int a = scan.nextInt();
         int b = scan.nextInt();
         System.out.println("Периметр прямоугольника равен: " + (2 * a + 2 * b) + "\nПлощадь прямоугольника равна: " + (a * b));
     }
 
     public static void homework2(Scanner scan){
-        System.out.println("Задача №7\n Введите баллы");
+        System.out.println("ДЗ №2\n Введите баллы");
         int a = scan.nextInt();
         if (a >= 0 && a <= 29) {
             System.out.println("Оценка F");
@@ -96,7 +96,7 @@ public class Main {
     }
 
     public static void homework3(Scanner scan){
-        System.out.println("Задача №8\n Введите число");
+        System.out.println("ДЗ №3\n Введите число");
         int a = scan.nextInt();
         for (int i = 1; i < 10; i++) {
             System.out.println(a + " * " + i + " = " + a * i);
