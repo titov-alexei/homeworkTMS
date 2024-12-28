@@ -11,6 +11,12 @@ fun main() {
         7 -> homework2()
         8 -> homework3()
         9->fibonachi1()
+        10-> {
+            println("Введите число для расчета числа Фибоначчи (рекурсия): ")
+            val x = readln().toInt()
+            val res = fibonachi2(x)
+            println("Число Фибоначи: $res")
+        }
         else -> println("Ввели неверный номер задания")
     }
 }
@@ -112,6 +118,17 @@ fun fibonachi1() {
         }
     }
 }
+
+fun fibonachi2(number: Int) : Int {
+    return if (number <= 1) {
+        0
+    } else if (number == 2) {
+        1
+    } else {
+        Main.fibonachi2(number - 1) + Main.fibonachi2(number - 2)
+    }
+}
+
 
 
 
